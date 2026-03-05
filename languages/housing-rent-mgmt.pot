@@ -1,0 +1,832 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Housing Rent Management 1.0.0\n"
+"Report-Msgid-Bugs-To: https://yourwebsite.com/contact\n"
+"POT-Creation-Date: 2024-01-01 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: housing-rent-mgmt\n"
+
+#: housing-rent-management.php:50
+msgid "Housing Rent Management: Database tables are missing. Please run the SQL installation script from the <code>/sql</code> folder."
+msgstr ""
+
+#: housing-rent-management.php:51
+msgid "Missing tables: %s"
+msgstr ""
+
+#: housing-rent-management.php:52
+msgid "View installation instructions"
+msgstr ""
+
+#: includes/class-functions.php:199
+msgid "Cash"
+msgstr ""
+
+#: includes/class-functions.php:200
+msgid "Check"
+msgstr ""
+
+#: includes/class-functions.php:201
+msgid "Bank Transfer"
+msgstr ""
+
+#: includes/class-functions.php:202
+msgid "Credit Card"
+msgstr ""
+
+#: includes/class-functions.php:203
+msgid "Online Payment"
+msgstr ""
+
+#: includes/class-post-types.php:17
+msgid "Rent Agreements"
+msgstr ""
+
+#: includes/class-post-types.php:18
+msgid "Rent Agreement"
+msgstr ""
+
+#: includes/class-post-types.php:19
+msgid "Add New"
+msgstr ""
+
+#: includes/class-post-types.php:20
+msgid "Add New Agreement"
+msgstr ""
+
+#: includes/class-post-types.php:21
+msgid "Edit Agreement"
+msgstr ""
+
+#: includes/class-post-types.php:22
+msgid "New Agreement"
+msgstr ""
+
+#: includes/class-post-types.php:23
+msgid "View Agreement"
+msgstr ""
+
+#: includes/class-post-types.php:24
+msgid "Search Agreements"
+msgstr ""
+
+#: includes/class-post-types.php:25
+msgid "No agreements found"
+msgstr ""
+
+#: includes/class-post-types.php:26
+msgid "No agreements found in trash"
+msgstr ""
+
+#: includes/class-post-types.php:40
+msgid "Payment Receipts"
+msgstr ""
+
+#: includes/class-post-types.php:41
+msgid "Payment Receipt"
+msgstr ""
+
+#: includes/class-post-types.php:53
+msgid "Maintenance"
+msgstr ""
+
+#: includes/class-post-types.php:54
+msgid "Maintenance Request"
+msgstr ""
+
+#: includes/class-meta-boxes.php:18
+msgid "Agreement Details"
+msgstr ""
+
+#: includes/class-meta-boxes.php:26
+msgid "Payment Details"
+msgstr ""
+
+#: includes/class-meta-boxes.php:34
+msgid "Maintenance Details"
+msgstr ""
+
+#: includes/class-meta-boxes.php:47
+msgid "Property"
+msgstr ""
+
+#: includes/class-meta-boxes.php:50
+msgid "Select Property"
+msgstr ""
+
+#: includes/class-meta-boxes.php:61
+msgid "Tenant"
+msgstr ""
+
+#: includes/class-meta-boxes.php:64
+msgid "Select Tenant"
+msgstr ""
+
+#: includes/class-meta-boxes.php:75
+msgid "Owner"
+msgstr ""
+
+#: includes/class-meta-boxes.php:78
+msgid "Select Owner"
+msgstr ""
+
+#: includes/class-meta-boxes.php:89
+msgid "Start Date"
+msgstr ""
+
+#: includes/class-meta-boxes.php:92
+msgid "End Date"
+msgstr ""
+
+#: includes/class-meta-boxes.php:95
+msgid "Monthly Rent"
+msgstr ""
+
+#: includes/class-meta-boxes.php:98
+msgid "Security Deposit"
+msgstr ""
+
+#: includes/class-shortcodes.php:16
+msgid "Please login to view your dashboard."
+msgstr ""
+
+#: includes/class-shortcodes.php:26
+msgid "Please login to pay rent."
+msgstr ""
+
+#: includes/class-shortcodes.php:36
+msgid "Please login to submit a maintenance request."
+msgstr ""
+
+#: includes/class-shortcodes.php:53
+msgid "No properties found."
+msgstr ""
+
+#: includes/class-shortcodes.php:58
+msgid "Address:"
+msgstr ""
+
+#: includes/class-shortcodes.php:59
+msgid "City:"
+msgstr ""
+
+#: includes/class-shortcodes.php:60
+msgid "Bedrooms:"
+msgstr ""
+
+#: includes/class-shortcodes.php:61
+msgid "Bathrooms:"
+msgstr ""
+
+#: includes/class-shortcodes.php:62
+msgid "Status:"
+msgstr ""
+
+#: includes/class-shortcodes.php:75
+msgid "Please login to view your rental history."
+msgstr ""
+
+#: includes/class-shortcodes.php:88
+msgid "No rental history found."
+msgstr ""
+
+#: includes/class-shortcodes.php:100
+msgid "Your Payment History"
+msgstr ""
+
+#: includes/class-shortcodes.php:103
+msgid "No payment history found."
+msgstr ""
+
+#: includes/class-shortcodes.php:110
+msgid "Date"
+msgstr ""
+
+#: includes/class-shortcodes.php:111
+msgid "Amount"
+msgstr ""
+
+#: includes/class-shortcodes.php:112
+msgid "Status"
+msgstr ""
+
+#: includes/class-shortcodes.php:113
+msgid "Method"
+msgstr ""
+
+#: includes/class-admin-menu.php:17
+msgid "Housing Rent"
+msgstr ""
+
+#: includes/class-admin-menu.php:26
+msgid "Dashboard"
+msgstr ""
+
+#: includes/class-admin-menu.php:33
+msgid "Properties"
+msgstr ""
+
+#: includes/class-admin-menu.php:40
+msgid "Owners"
+msgstr ""
+
+#: includes/class-admin-menu.php:47
+msgid "Tenants"
+msgstr ""
+
+#: includes/class-admin-menu.php:54
+msgid "Rent Agreements"
+msgstr ""
+
+#: includes/class-admin-menu.php:55
+msgid "Agreements"
+msgstr ""
+
+#: includes/class-admin-menu.php:62
+msgid "Rent Payments"
+msgstr ""
+
+#: includes/class-admin-menu.php:63
+msgid "Payments"
+msgstr ""
+
+#: includes/class-admin-menu.php:70
+msgid "Maintenance"
+msgstr ""
+
+#: includes/class-admin-menu.php:77
+msgid "Reports"
+msgstr ""
+
+#: includes/class-admin-menu.php:84
+msgid "Settings"
+msgstr ""
+
+#: admin/partials/dashboard.php:10
+msgid "Housing Rent Dashboard"
+msgstr ""
+
+#: admin/partials/dashboard.php:16
+msgid "Total Properties"
+msgstr ""
+
+#: admin/partials/dashboard.php:18
+msgid "Active rentals"
+msgstr ""
+
+#: admin/partials/dashboard.php:23
+msgid "Active Tenants"
+msgstr ""
+
+#: admin/partials/dashboard.php:25
+msgid "Currently renting"
+msgstr ""
+
+#: admin/partials/dashboard.php:30
+msgid "Active Agreements"
+msgstr ""
+
+#: admin/partials/dashboard.php:32
+msgid "Current leases"
+msgstr ""
+
+#: admin/partials/dashboard.php:37
+msgid "Total Owners"
+msgstr ""
+
+#: admin/partials/dashboard.php:39
+msgid "Property owners"
+msgstr ""
+
+#: admin/partials/dashboard.php:44
+msgid "Pending Maintenance"
+msgstr ""
+
+#: admin/partials/dashboard.php:46
+msgid "Requests to handle"
+msgstr ""
+
+#: admin/partials/dashboard.php:51
+msgid "Overdue Payments"
+msgstr ""
+
+#: admin/partials/dashboard.php:53
+msgid "Late payments"
+msgstr ""
+
+#: admin/partials/dashboard.php:58
+msgid "Monthly Rent"
+msgstr ""
+
+#: admin/partials/dashboard.php:60
+msgid "Collected this month"
+msgstr ""
+
+#: admin/partials/dashboard.php:69
+msgid "Recent Payments"
+msgstr ""
+
+#: admin/partials/dashboard.php:71
+msgid "No recent payments."
+msgstr ""
+
+#: admin/partials/dashboard.php:78
+msgid "Tenant"
+msgstr ""
+
+#: admin/partials/dashboard.php:79
+msgid "Property"
+msgstr ""
+
+#: admin/partials/dashboard.php:93
+msgid "View All Payments"
+msgstr ""
+
+#: admin/partials/dashboard.php:102
+msgid "Pending Maintenance"
+msgstr ""
+
+#: admin/partials/dashboard.php:104
+msgid "No pending maintenance requests."
+msgstr ""
+
+#: admin/partials/dashboard.php:112
+msgid "Issue"
+msgstr ""
+
+#: admin/partials/dashboard.php:113
+msgid "Priority"
+msgstr ""
+
+#: admin/partials/dashboard.php:129
+msgid "View All Maintenance"
+msgstr ""
+
+#: admin/partials/dashboard.php:137
+msgid "Quick Actions"
+msgstr ""
+
+#: admin/partials/dashboard.php:139
+msgid "Add Property"
+msgstr ""
+
+#: admin/partials/dashboard.php:140
+msgid "Add Owner"
+msgstr ""
+
+#: admin/partials/dashboard.php:141
+msgid "Add Tenant"
+msgstr ""
+
+#: admin/partials/dashboard.php:142
+msgid "New Agreement"
+msgstr ""
+
+#: admin/partials/dashboard.php:143
+msgid "Record Payment"
+msgstr ""
+
+#: admin/partials/properties.php:10
+msgid "Property deleted successfully."
+msgstr ""
+
+#: admin/partials/properties.php:21
+msgid "Properties"
+msgstr ""
+
+#: admin/partials/properties.php:22
+msgid "Add New Property"
+msgstr ""
+
+#: admin/partials/properties.php:28
+msgid "Search properties..."
+msgstr ""
+
+#: admin/partials/properties.php:30
+msgid "All Status"
+msgstr ""
+
+#: admin/partials/properties.php:31
+msgid "Available"
+msgstr ""
+
+#: admin/partials/properties.php:32
+msgid "Rented"
+msgstr ""
+
+#: admin/partials/properties.php:33
+msgid "Maintenance"
+msgstr ""
+
+#: admin/partials/properties.php:39
+msgid "ID"
+msgstr ""
+
+#: admin/partials/properties.php:40
+msgid "Property Name"
+msgstr ""
+
+#: admin/partials/properties.php:41
+msgid "Address"
+msgstr ""
+
+#: admin/partials/properties.php:42
+msgid "Type"
+msgstr ""
+
+#: admin/partials/properties.php:43
+msgid "Bed/Bath"
+msgstr ""
+
+#: admin/partials/properties.php:44
+msgid "Owners"
+msgstr ""
+
+#: admin/partials/properties.php:45
+msgid "Actions"
+msgstr ""
+
+#: admin/partials/properties.php:48
+msgid "No properties found."
+msgstr ""
+
+#: admin/partials/properties.php:63
+msgid "Edit"
+msgstr ""
+
+#: admin/partials/properties.php:64
+msgid "Are you sure?"
+msgstr ""
+
+#: admin/partials/properties.php:68
+msgid "Delete"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:8
+msgid "No tenant record found for your account."
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:39
+msgid "Welcome, %s!"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:40
+msgid "Manage your rental information, payments, and maintenance requests."
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:45
+msgid "Current Rental"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:64
+msgid "No active rental agreement found."
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:70
+msgid "Quick Actions"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:73
+msgid "Pay This Month's Rent"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:74
+msgid "Submit Maintenance Request"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:75
+msgid "View Payment History"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:80
+msgid "Payment Status"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:83
+msgid "Payment due for this month"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:84
+msgid "Amount Due:"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:87
+msgid "Due Date:"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:90
+msgid "Late fee of %s applies after %d days"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:93
+msgid "All payments are up to date"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:101
+msgid "Recent Payments"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:103
+msgid "No payment history found."
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:110
+msgid "For Month"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:114
+msgid "Receipt"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:124
+msgid "View All Payments →"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:133
+msgid "Maintenance Requests"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:135
+msgid "No maintenance requests found."
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:143
+msgid "Description"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:162
+msgid "Your Information"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:165
+msgid "Full Name:"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:166
+msgid "Email:"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:167
+msgid "Phone:"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:169
+msgid "Alt. Phone:"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:175
+msgid "Emergency Contact:"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:176
+msgid "Emergency Phone:"
+msgstr ""
+
+#: public/partials/tenant-dashboard.php:180
+msgid "Employer:"
+msgstr ""
+
+#: public/partials/pay-rent.php:8
+msgid "No tenant record found for your account."
+msgstr ""
+
+#: public/partials/pay-rent.php:21
+msgid "No active rental agreement found."
+msgstr ""
+
+#: public/partials/pay-rent.php:33
+msgid "You have already paid rent for this month."
+msgstr ""
+
+#: public/partials/pay-rent.php:61
+msgid "Pay Rent"
+msgstr ""
+
+#: public/partials/pay-rent.php:64
+msgid "Payment Details"
+msgstr ""
+
+#: public/partials/pay-rent.php:69
+msgid "Late Fee:"
+msgstr ""
+
+#: public/partials/pay-rent.php:72
+msgid "Payment is %d days late"
+msgstr ""
+
+#: public/partials/pay-rent.php:76
+msgid "Total Amount Due:"
+msgstr ""
+
+#: public/partials/pay-rent.php:84
+msgid "Select Payment Method"
+msgstr ""
+
+#: public/partials/pay-rent.php:87
+msgid "Credit Card"
+msgstr ""
+
+#: public/partials/pay-rent.php:92
+msgid "Bank Transfer"
+msgstr ""
+
+#: public/partials/pay-rent.php:97
+msgid "PayPal"
+msgstr ""
+
+#: public/partials/pay-rent.php:105
+msgid "Card Number"
+msgstr ""
+
+#: public/partials/pay-rent.php:110
+msgid "Expiry (MM/YY)"
+msgstr ""
+
+#: public/partials/pay-rent.php:115
+msgid "CVV"
+msgstr ""
+
+#: public/partials/pay-rent.php:123
+msgid "Please transfer the amount to the following bank account:"
+msgstr ""
+
+#: public/partials/pay-rent.php:124
+msgid "Bank:"
+msgstr ""
+
+#: public/partials/pay-rent.php:125
+msgid "Account Name:"
+msgstr ""
+
+#: public/partials/pay-rent.php:126
+msgid "Account Number:"
+msgstr ""
+
+#: public/partials/pay-rent.php:127
+msgid "Routing Number:"
+msgstr ""
+
+#: public/partials/pay-rent.php:128
+msgid "After transfer, enter the transaction ID below."
+msgstr ""
+
+#: public/partials/pay-rent.php:132
+msgid "Transaction ID / Reference"
+msgstr ""
+
+#: public/partials/pay-rent.php:140
+msgid "You will be redirected to PayPal to complete your payment."
+msgstr ""
+
+#: public/partials/pay-rent.php:146
+msgid "Additional Notes (Optional)"
+msgstr ""
+
+#: public/partials/pay-rent.php:147
+msgid "Any additional information..."
+msgstr ""
+
+#: public/partials/pay-rent.php:151
+msgid "Pay %s Now"
+msgstr ""
+
+#: public/partials/pay-rent.php:155
+msgid "← Back to Dashboard"
+msgstr ""
+
+#: public/partials/maintenance-request.php:8
+msgid "No tenant record found for your account."
+msgstr ""
+
+#: public/partials/maintenance-request.php:26
+msgid "Submit Maintenance Request"
+msgstr ""
+
+#: public/partials/maintenance-request.php:31
+msgid "Select Property *"
+msgstr ""
+
+#: public/partials/maintenance-request.php:32
+msgid "Choose a property"
+msgstr ""
+
+#: public/partials/maintenance-request.php:40
+msgid "Issue Type *"
+msgstr ""
+
+#: public/partials/maintenance-request.php:43
+msgid "Plumbing"
+msgstr ""
+
+#: public/partials/maintenance-request.php:47
+msgid "Electrical"
+msgstr ""
+
+#: public/partials/maintenance-request.php:51
+msgid "HVAC"
+msgstr ""
+
+#: public/partials/maintenance-request.php:55
+msgid "Appliance"
+msgstr ""
+
+#: public/partials/maintenance-request.php:59
+msgid "Structural"
+msgstr ""
+
+#: public/partials/maintenance-request.php:63
+msgid "Pest Control"
+msgstr ""
+
+#: public/partials/maintenance-request.php:67
+msgid "Security"
+msgstr ""
+
+#: public/partials/maintenance-request.php:71
+msgid "Other"
+msgstr ""
+
+#: public/partials/maintenance-request.php:79
+msgid "Priority *"
+msgstr ""
+
+#: public/partials/maintenance-request.php:80
+msgid "Low - Can wait"
+msgstr ""
+
+#: public/partials/maintenance-request.php:81
+msgid "Medium - Needs attention soon"
+msgstr ""
+
+#: public/partials/maintenance-request.php:82
+msgid "High - Urgent"
+msgstr ""
+
+#: public/partials/maintenance-request.php:83
+msgid "Emergency - Immediate action required"
+msgstr ""
+
+#: public/partials/maintenance-request.php:88
+msgid "Description *"
+msgstr ""
+
+#: public/partials/maintenance-request.php:89
+msgid "Please describe the issue in detail..."
+msgstr ""
+
+#: public/partials/maintenance-request.php:94
+msgid "Attach Photos (Optional)"
+msgstr ""
+
+#: public/partials/maintenance-request.php:96
+msgid "Max file size: 5MB. Supported formats: JPG, PNG"
+msgstr ""
+
+#: public/partials/maintenance-request.php:100
+msgid "Preferred Access Time (Optional)"
+msgstr ""
+
+#: public/partials/maintenance-request.php:101
+msgid "e.g., Weekdays after 5 PM"
+msgstr ""
+
+#: public/partials/maintenance-request.php:104
+msgid "Submit Request"
+msgstr ""
+
+#: public/partials/maintenance-request.php:108
+msgid "Maintenance Guidelines"
+msgstr ""
+
+#: public/partials/maintenance-request.php:110
+msgid "Emergency issues (gas leak, flooding, electrical hazard) will be prioritized immediately"
+msgstr ""
+
+#: public/partials/maintenance-request.php:111
+msgid "Please provide as much detail as possible about the issue"
+msgstr ""
+
+#: public/partials/maintenance-request.php:112
+msgid "Photos help us understand the issue better"
+msgstr ""
+
+#: public/partials/maintenance-request.php:113
+msgid "You will receive updates via email about your request status"
+msgstr ""
+
+#: public/partials/maintenance-request.php:114
+msgid "For emergency issues, also call our emergency line: (555) 123-4567"
+msgstr ""
+
+#: uninstall.php:26
+msgid "Keep data on uninstall"
+msgstr ""

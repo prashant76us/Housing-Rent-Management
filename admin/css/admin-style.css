@@ -1,0 +1,985 @@
+/**
+ * Housing Rent Management Admin Styles
+ * Version: 1.0.0
+ */
+
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+.hrm-wrap {
+    margin: 20px 20px 0 2px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.hrm-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   Dashboard Widgets
+   ========================================================================== */
+.hrm-dashboard-widgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.hrm-widget {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.hrm-widget::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255,255,255,0.1);
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+.hrm-widget:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.hrm-widget:nth-child(2) {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.hrm-widget:nth-child(3) {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.hrm-widget:nth-child(4) {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.hrm-widget:nth-child(5) {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.hrm-widget:nth-child(6) {
+    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
+.hrm-widget:nth-child(7) {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    color: #333;
+}
+
+.hrm-widget h3 {
+    margin: 0 0 15px 0;
+    color: rgba(255,255,255,0.9);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hrm-widget .hrm-widget-number {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 15px 0 5px;
+    line-height: 1;
+}
+
+.hrm-widget .hrm-widget-label {
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+.hrm-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin: 20px 0;
+}
+
+.hrm-table thead tr {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.hrm-table th {
+    text-align: left;
+    padding: 15px 12px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hrm-table td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+    color: #333;
+}
+
+.hrm-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.hrm-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ==========================================================================
+   Status Badges
+   ========================================================================== */
+.hrm-status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    min-width: 80px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hrm-status-active,
+.hrm-status-paid,
+.hrm-status-completed,
+.hrm-status-available {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.hrm-status-pending {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.hrm-status-in-progress {
+    background: #cce5ff;
+    color: #004085;
+    border: 1px solid #b8daff;
+}
+
+.hrm-status-inactive,
+.hrm-status-expired,
+.hrm-status-cancelled {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.hrm-status-overdue {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    animation: pulse 2s infinite;
+}
+
+.hrm-status-low {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.hrm-status-medium {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.hrm-status-high {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.hrm-status-emergency {
+    background: #dc3545;
+    color: white;
+    border: 1px solid #dc3545;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+.hrm-form {
+    max-width: 100%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.hrm-form-row {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.hrm-form-row label {
+    width: 200px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+.hrm-form-row input[type="text"],
+.hrm-form-row input[type="email"],
+.hrm-form-row input[type="number"],
+.hrm-form-row input[type="date"],
+.hrm-form-row input[type="month"],
+.hrm-form-row select,
+.hrm-form-row textarea {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background: #fafafa;
+}
+
+.hrm-form-row input:focus,
+.hrm-form-row select:focus,
+.hrm-form-row textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    background: #fff;
+}
+
+.hrm-form-row input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.hrm-form-row .description {
+    flex-basis: 100%;
+    margin-left: 200px;
+    color: #666;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.hrm-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.hrm-button:hover {
+    background: linear-gradient(135deg, #5a67d8 0%, #6b46a0 100%);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.hrm-button:active {
+    transform: translateY(1px);
+}
+
+.hrm-button-secondary {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: none;
+}
+
+.hrm-button-secondary:hover {
+    background: #f8f9fa;
+    color: #333;
+    border-color: #ccc;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.hrm-button-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.hrm-button-danger:hover {
+    background: #c82333;
+}
+
+.hrm-button-sm {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.hrm-button-lg {
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+.hrm-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* ==========================================================================
+   Modals
+   ========================================================================== */
+.hrm-modal {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hrm-modal-content {
+    background-color: #fff;
+    margin: 30px auto;
+    padding: 30px;
+    border: none;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    position: relative;
+    animation: slideIn 0.3s ease;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.hrm-modal-content h2 {
+    margin: 0 0 25px 0;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.hrm-modal-close {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    color: #999;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+    background: #f8f9fa;
+}
+
+.hrm-modal-close:hover {
+    color: #333;
+    background: #e9ecef;
+    transform: rotate(90deg);
+}
+
+/* ==========================================================================
+   Tabs
+   ========================================================================== */
+.hrm-tabs {
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.hrm-tab-buttons {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 0;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.hrm-tab-button {
+    background: none;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    position: relative;
+    transition: all 0.3s;
+    border-radius: 6px 6px 0 0;
+}
+
+.hrm-tab-button:hover {
+    color: #667eea;
+    background: #f8f9fa;
+}
+
+.hrm-tab-button.active {
+    color: #667eea;
+    background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);
+}
+
+.hrm-tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 3px 3px 0 0;
+}
+
+.hrm-tab-pane {
+    display: none;
+    padding: 20px 0;
+}
+
+.hrm-tab-pane.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+/* ==========================================================================
+   Search and Filters
+   ========================================================================== */
+.hrm-search-box {
+    margin: 25px 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hrm-search-box input[type="text"] {
+    flex: 1;
+    min-width: 250px;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>') no-repeat 12px center;
+    background-size: 20px;
+    padding-left: 40px;
+}
+
+.hrm-filters {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+.hrm-filters select,
+.hrm-filters input[type="month"] {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    min-width: 150px;
+    font-size: 14px;
+}
+
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+.hrm-pagination {
+    margin: 30px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.hrm-pagination a,
+.hrm-pagination span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 8px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #667eea;
+    border-radius: 6px;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.hrm-pagination a:hover {
+    background: #f8f9fa;
+    border-color: #667eea;
+}
+
+.hrm-pagination .current {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-color: transparent;
+}
+
+/* ==========================================================================
+   Alerts and Notices
+   ========================================================================== */
+.hrm-notices {
+    margin: 20px 0;
+}
+
+.hrm-alert {
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: slideIn 0.3s ease;
+}
+
+.hrm-alert-success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.hrm-alert-error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.hrm-alert-info {
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    color: #0c5460;
+}
+
+.hrm-alert-warning {
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+}
+
+.hrm-alert .close {
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.hrm-alert .close:hover {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   Quick Actions
+   ========================================================================== */
+.hrm-quick-actions {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-top: 30px;
+}
+
+.hrm-quick-actions h3 {
+    margin: 0 0 20px 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hrm-quick-actions .button-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Loading Spinner
+   ========================================================================== */
+.hrm-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(102, 126, 234, 0.3);
+    border-radius: 50%;
+    border-top-color: #667eea;
+    animation: spin 1s ease-in-out infinite;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   Cards and Grid Layouts
+   ========================================================================== */
+.hrm-row {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.hrm-col {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hrm-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.hrm-card h3 {
+    margin: 0 0 20px 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* ==========================================================================
+   Property Cards (for frontend)
+   ========================================================================== */
+.hrm-properties-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.hrm-property-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hrm-property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.hrm-property-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-color: #f8f9fa;
+}
+
+.hrm-property-details {
+    padding: 20px;
+}
+
+.hrm-property-details h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hrm-property-details p {
+    margin: 8px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.hrm-property-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #667eea;
+    margin: 15px 0;
+}
+
+/* ==========================================================================
+   Dashboard Specific
+   ========================================================================== */
+.hrm-dashboard-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.hrm-dashboard-header h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.hrm-dashboard-header p {
+    margin: 10px 0 0;
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+@media print {
+    .hrm-modal,
+    .hrm-button,
+    .hrm-search-box,
+    .hrm-filters,
+    .hrm-quick-actions {
+        display: none !important;
+    }
+    
+    .hrm-table {
+        box-shadow: none;
+    }
+    
+    .hrm-widget {
+        background: #f8f9fa;
+        color: #333;
+        break-inside: avoid;
+    }
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+@media (max-width: 1200px) {
+    .hrm-dashboard-widgets {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .hrm-dashboard-widgets {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hrm-form-row label {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    
+    .hrm-form-row input[type="text"],
+    .hrm-form-row input[type="email"],
+    .hrm-form-row input[type="number"],
+    .hrm-form-row select,
+    .hrm-form-row textarea {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .hrm-form-row .description {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hrm-dashboard-widgets {
+        grid-template-columns: 1fr;
+    }
+    
+    .hrm-modal-content {
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    
+    .hrm-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .hrm-tab-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .hrm-tab-button {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .hrm-tab-button.active::after {
+        display: none;
+    }
+    
+    .hrm-search-box {
+        flex-direction: column;
+    }
+    
+    .hrm-search-box input[type="text"],
+    .hrm-search-box select {
+        width: 100%;
+    }
+    
+    .hrm-row {
+        flex-direction: column;
+    }
+    
+    .hrm-col {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+   Tooltips
+   ========================================================================== */
+.hrm-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.hrm-tooltip .hrm-tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+}
+
+.hrm-tooltip:hover .hrm-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ==========================================================================
+   Progress Bars
+   ========================================================================== */
+.hrm-progress {
+    height: 8px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.hrm-progress-bar {
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* ==========================================================================
+   Charts Container
+   ========================================================================== */
+.hrm-chart-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin: 20px 0;
+    height: 300px;
+}
+
+/* ==========================================================================
+   Custom Scrollbar
+   ========================================================================== */
+.hrm-modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.hrm-modal-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.hrm-modal-content::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.hrm-modal-content::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}

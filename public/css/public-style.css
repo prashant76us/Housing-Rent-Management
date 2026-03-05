@@ -1,0 +1,394 @@
+/**
+ * Housing Rent Management Public Styles
+ */
+
+.hrm-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Tenant Dashboard */
+.hrm-dashboard {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.hrm-dashboard-header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.hrm-dashboard-header h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.hrm-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.hrm-dashboard-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hrm-dashboard-card h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.hrm-dashboard-card .amount {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0073aa;
+}
+
+/* Forms */
+.hrm-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hrm-form-group {
+    margin-bottom: 20px;
+}
+
+.hrm-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.hrm-form-group input[type="text"],
+.hrm-form-group input[type="email"],
+.hrm-form-group input[type="number"],
+.hrm-form-group input[type="date"],
+.hrm-form-group select,
+.hrm-form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.hrm-form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.hrm-form-group input:focus,
+.hrm-form-group select:focus,
+.hrm-form-group textarea:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 2px rgba(0,115,170,0.1);
+}
+
+.hrm-submit-btn {
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.hrm-submit-btn:hover {
+    background: #005a87;
+}
+
+.hrm-submit-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Payment Form */
+.hrm-payment-details {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.hrm-payment-details p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.hrm-payment-details .total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0073aa;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* Payment Methods */
+.hrm-payment-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.hrm-payment-method {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hrm-payment-method:hover {
+    border-color: #0073aa;
+}
+
+.hrm-payment-method.selected {
+    border-color: #0073aa;
+    background: #f0f7fc;
+}
+
+.hrm-payment-method input[type="radio"] {
+    display: none;
+}
+
+.hrm-payment-method label {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Maintenance Request */
+.hrm-maintenance-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.hrm-issue-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.hrm-issue-type {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hrm-issue-type:hover {
+    background: #e5e5e5;
+}
+
+.hrm-issue-type.selected {
+    background: #0073aa;
+    color: #fff;
+    border-color: #0073aa;
+}
+
+/* Properties List */
+.hrm-properties-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.hrm-property-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hrm-property-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hrm-property-details {
+    padding: 20px;
+}
+
+.hrm-property-details h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 20px;
+}
+
+.hrm-property-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.hrm-property-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0073aa;
+    margin: 10px 0;
+}
+
+.hrm-property-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.hrm-property-status.available {
+    background: #dff0d8;
+    color: #3c763d;
+}
+
+.hrm-property-status.rented {
+    background: #fcf8e3;
+    color: #8a6d3b;
+}
+
+/* Tables */
+.hrm-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin: 20px 0;
+}
+
+.hrm-table th {
+    text-align: left;
+    padding: 12px;
+    background: #f5f5f5;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+}
+
+.hrm-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.hrm-table tr:hover {
+    background: #f9f9f9;
+}
+
+/* Status Badges */
+.hrm-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.hrm-status-paid,
+.hrm-status-completed {
+    background: #dff0d8;
+    color: #3c763d;
+}
+
+.hrm-status-pending {
+    background: #fcf8e3;
+    color: #8a6d3b;
+}
+
+.hrm-status-overdue {
+    background: #f2dede;
+    color: #a94442;
+}
+
+/* Alerts */
+.hrm-alert {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.hrm-alert-success {
+    background: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+}
+
+.hrm-alert-error {
+    background: #f2dede;
+    border: 1px solid #ebccd1;
+    color: #a94442;
+}
+
+.hrm-alert-info {
+    background: #d9edf7;
+    border: 1px solid #bce8f1;
+    color: #31708f;
+}
+
+/* Loading Spinner */
+.hrm-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hrm-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hrm-properties-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .hrm-form {
+        padding: 20px;
+    }
+    
+    .hrm-payment-methods {
+        grid-template-columns: 1fr;
+    }
+    
+    .hrm-issue-types {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hrm-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
